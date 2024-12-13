@@ -57,7 +57,7 @@ def find_words(characters, wordDict) -> List[str]:
 def display_words(wordsByLength: dict):
     for length in wordsByLength.keys():
         print(f"{length} letter words:")
-        words =  wordsByLength[length]
+        words =  sorted(wordsByLength[length])
         if len(words) == 0:
             print(f"\tNo {length} letter words")
         else:
